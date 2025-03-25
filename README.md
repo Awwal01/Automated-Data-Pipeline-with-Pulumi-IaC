@@ -26,13 +26,14 @@ Data Source: HackerNews API
 └── Pulumi.prod.yaml      # Production stack configuration<br>
 
 ## Usage
-Setting Up a pulumi project
+Setting Up a new pulumi project<br>
+bash
 ```{bash}
 pulumi new aws-python
 ```
 leave other settings as default, we used us-west-2 as region
-bashCopy
 ### For development environment
+bash
 ```{bash}
 pulumi config set bucketName hackernews-data-dev --stack dev
 pulumi config set --secret dbPassword your-db-password --stack dev
